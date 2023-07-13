@@ -42,6 +42,7 @@ public class GreetingController {
                 Item item = new Item();
                 item.setName(itemData.getName());
                 item.setPrice(itemData.getPrice());
+                item.setCategory(itemData.getCategory());
 
                 // Upload the item image to S3 and get the S3 bucket link
                 byte[] itemImageData = Base64.getDecoder().decode(itemData.getImage());
