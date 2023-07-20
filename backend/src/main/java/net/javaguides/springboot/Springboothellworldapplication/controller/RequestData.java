@@ -20,5 +20,6 @@ public class RequestData {
         private String price;
         private String image;
         private String category;
+        private String description;
     }
 }

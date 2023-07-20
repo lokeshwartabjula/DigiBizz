@@ -19,6 +19,7 @@ public class Item {
     private String price;
     private String image;
     private String category;
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "store_id")

@@ -8,6 +8,8 @@ import net.javaguides.springboot.Springboothellworldapplication.model.Item;
 import net.javaguides.springboot.Springboothellworldapplication.model.Store;
 import net.javaguides.springboot.Springboothellworldapplication.repository.StoreRepository;
 
+import java.util.List;
+
 @Service
 public class StoreService {
 
@@ -28,6 +30,22 @@ public class StoreService {
     public void saveItem(Item item) {
         itemRepository.save(item);
         System.out.println("Saving item: " + item.getName());
+    }
+
+    public List<Item> getAllItems() {
+        return itemRepository.findAll();
+    }
+    public Item getItemById(Long id) {
+        return itemRepository.findById(id)
+                .orElse(null);
+    }
+    public List<Store> getAllStores() {
+        return storeRepository.findAll();
+    }
+
+    public Store getStoreById(Long id) {
+        return storeRepository.findById(id)
+                .orElse(null);
     }
 
     public Store findStoreByName(String name) {
