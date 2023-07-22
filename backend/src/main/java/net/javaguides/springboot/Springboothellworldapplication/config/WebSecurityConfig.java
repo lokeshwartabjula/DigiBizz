@@ -22,15 +22,15 @@ public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
-                .authorizeHttpRequests((authz) -> authz
-                        .requestMatchers("/authenticate", "/user/signup").permitAll()
-                        .anyRequest().authenticated()
-                )
-                .sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .exceptionHandling((exceptions) -> exceptions
-                        .authenticationEntryPoint(jwtAuthenticationEntryPoint)
-                )
-                .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
+        .authorizeRequests((authz) -> authz
+                .antMatchers("/authenticate", "/user/signup").permitAll()
+                .anyRequest().authenticated()
+        )
+        .sessionManagement((session) -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+        .exceptionHandling((exceptions) -> exceptions
+                .authenticationEntryPoint(jwtAuthenticationEntryPoint)
+        )
+        .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
