@@ -1,0 +1,10 @@
+.squeeze-logo {
+  height: 8vmin;
+  pointer-events: none;
+  object-fit: contain;
+}
+
+.menuItemcss {
+    display: flex;
+    align-items: center;
+}
