@@ -1,92 +1,128 @@
-# CSCI5193-S23-TI-Team4
+# DigiBizz
 
+## Table of Contents
 
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://git.cs.dal.ca/kathiria/csci5193-s23-ti-team4.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://git.cs.dal.ca/kathiria/csci5193-s23-ti-team4/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
+- [Description](#description)
+- [Team Members](#team-members)
+- [Tech Stack](#tech-stack)
+- [Prerequisites](#prerequisites)
+- [Project Workflow](#high-level-workflow-of-the-project)
+- [Links](#links)
+- [Code References](#code-references)
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+The design challenge aims to address the digital divide faced by small-scale businesses and local markets. The project proposes a technological innovation to enhance online visibility, customer outreach, and inventory management for these businesses. The solution includes a user-friendly web application. Leveraging cloud-based technologies, the proposed solution empowers small-scale businesses to compete effectively in the digital era.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## Team Members
+
+| No. | Name                           | Student ID    |
+|-----|--------------------------------|---------------|
+| 1   | Jainisha Jayamurthy            | B00925810     |
+| 2   | Harsh Nareshbhai Kathiria      | B00931861     |
+| 3   | Tabjula Lokeshwar Kumar        | B00936909     |
+| 4   | Makwana Vasu Jitendra          | B00945901     |
+| 5   | Gor Smit Hasmukhbhai           | B00943216     |
+| 6   | Vadivel Emayan                 | B00934556     |
+| 7   | Makadia Ishan                  | B00931915     |
+
+## Tech Stack
+
+Frontend - React.js  
+Backend - Spring Boot
+Database - MySQL
+
+## Prerequisites
+
+Before running the application, make sure you have the following prerequisites installed on your system:
+
+1. **Node.js and npm:** [Download Node.js and npm](https://nodejs.org/)
+
+2. **React.js:** Install React.js globally using npm:
+
+3. **Java Development Kit (JDK):** [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html) or use OpenJDK.
+
+4. **Spring Boot:** [Set up Spring Boot](https://spring.io/guides/gs/spring-boot/) using Maven or Gradle.
+
+5. **MySQL Database:** [Download MySQL Community Edition](https://dev.mysql.com/downloads/)
+
+6. **MySQL Connector for Java:** Include the MySQL Connector/J library in your Spring Boot project:
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Follow these steps to set up the frontend and backend components of the project:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### Frontend (ReactJS):
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+- Clone the Repository
+    ```
+    git clone https://git.cs.dal.ca/kathiria/csci5193-s23-ti-team4.git
+    ```
+- Navigate to the project
+    ```
+    cd CSCI5193-S23-TI-Team4
+    ```
+- Navigate to the `frontend` directory:
+    ```bash
+    cd frontend
+    ```
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## Backend (Spring Boot):
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+To set up the backend, perform the following steps:
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+1. Open your preferred IDE and import the project.
 
-## License
-For open source projects, say how it is licensed.
+2. Build the project to download dependencies.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+3. Database (MySQL):
+   - Create a new MySQL database named "ti".
+   - Configure the database connection in the Spring Boot application properties.
+
+## High-Level Workflow of the Project
+
+The proposed technological innovation aims to address the challenges faced by small-scale businesses and local markets in terms of customer outreach, online visibility, and inventory management. The digital solution will be a comprehensive platform that leverages modern technology to empower these businesses and enable them to compete effectively in the digital landscape.
+
+### Workflow Overview:
+
+1. **User Registration and Onboarding:**
+   - Small-scale businesses register on the platform by providing necessary details.
+   - Upon registration, they gain access to their personalized dashboard.
+
+2. **Inventory Management:**
+   - Businesses can manage their product inventory through the dashboard.
+   - They can track stock levels, set reorder alerts, and manage their supply chain efficiently.
+
+3. **Online Visibility:**
+   - The platform showcases businesses' products and services through a user-friendly web and mobile interface.
+   - Customers can easily browse and explore offerings.
+
+### Addressing Challenges:
+
+1. **Enhanced Online Visibility:** The user-friendly mobile application and web platform enable small-scale businesses to establish and enhance their online presence, overcoming the digital visibility gap they face.
+
+2. **Improved Customer Outreach:** The integration of targeted marketing, CRM, and analytics features enables businesses to reach their target audience effectively, addressing the customer outreach challenges.
+
+3. **Streamlined Inventory Management:** The implementation of robust inventory management functionalities, including tracking, stock alerts, and reorder management, addresses the complexities of manual inventory management, leading to increased operational efficiency.
+
+4. **User-Friendly Solutions:** The user-friendly digital tools and intuitive platform design cater to businesses' preferences, ensuring smooth integration into their existing workflows.
+
+By addressing these challenges, the proposed technological innovation empowers small-scale businesses and local markets to thrive in the digital era, expanding their customer reach and competitiveness.
+
+## Links
+
+- [GitHub Repository] https://git.cs.dal.ca/kathiria/csci5193-s23-ti-team4
+- [Deployment Link] https://digifybizz.netlify.app/
+
+## Code References
+
+[1] "D. S. Phillip Webb," Spring Boot Reference Documentation. [Online]. Available: [https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/) [Accessed Jul. 28, 2023]
+
+[2] "Bootstrap Templates," Bootstrap templates. [Online]. Available: [https://www.w3schools.com/bootstrap/bootstrap_templates.asp](https://www.w3schools.com/bootstrap/bootstrap_templates.asp) [Accessed Jul. 28, 2023]
+
+[3] "React Tutorial," React tutorial. [Online]. Available: [https://www.w3schools.com/REACT/DEFAULT.ASP](https://www.w3schools.com/REACT/DEFAULT.ASP) [Accessed Jul. 28, 2023]
