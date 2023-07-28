@@ -12,7 +12,7 @@
 
 ## Description
 
-The design challenge aims to address the digital divide faced by small-scale businesses and local markets. The project proposes a technological innovation to enhance online visibility, customer outreach, and inventory management for these businesses. The solution includes a user-friendly mobile application and web platform, targeted marketing features, CRM tools, and robust inventory management functionalities. Leveraging cloud-based technologies, the proposed solution empowers small-scale businesses to compete effectively in the digital era.
+The design challenge aims to address the digital divide faced by small-scale businesses and local markets. The project proposes a technological innovation to enhance online visibility, customer outreach, and inventory management for these businesses. The solution includes a user-friendly web application. Leveraging cloud-based technologies, the proposed solution empowers small-scale businesses to compete effectively in the digital era.
 
 ## Team Members
 
@@ -29,7 +29,7 @@ The design challenge aims to address the digital divide faced by small-scale bus
 ## Tech Stack
 
 Frontend - React.js  
-Backend - Spring Boot 
+Backend - Spring Boot
 Database - MySQL
 
 ## Prerequisites
