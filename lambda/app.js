@@ -10,11 +10,11 @@ app.use(express.json());
 // My Routes
 app.use('/api', rootRoutes);
 
-const port = 8080;
+// const port = 8080;
 
 // Starting a server
-app.listen(port, () => {
-  console.log(`listening at ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`listening at ${port}`);
+// });
 
-// export default app;
+export default app;
