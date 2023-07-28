@@ -13,31 +13,34 @@ import ProductListView from "./components/products/ProductListView";
 import { Suspense } from "react";
 import CheckoutView from "./components/CheckoutView/CheckoutView";
 import ContactUsView from "./components/ContactUs/ContactUsView";
-
+import SignInView from "./components/SignIn/SignIn";
+import SignUpView from "./components/SignUp/SignUp";
 
 
 function App() {
+  const isUserAuthenticated = localStorage.getItem("isUserAuthenticated");
   return (
     <BrowserRouter>
-    <Header/>
-    <TopMenu/>
-    <Suspense
-          fallback={
-            <div className="text-white text-center mt-3">Loading...</div>
-          }
-        >
-      <Routes>
-        <Route path="/productsPage" element={<ProductListView/>}></Route>
-        <Route path="" element={<Home/>}></Route>
-        <Route exact path="/" element={<Register />}></Route>
-        <Route path="/AddItems" element={<AddItems/>}></Route>
-        <Route path="/checkout" element={<CheckoutView/>}></Route>
-        <Route path="/contactUs" element={<ContactUsView/>}></Route>
-
-      </Routes>
+      <Header />
+      {isUserAuthenticated && <TopMenu />}
+      <Suspense
+        fallback={
+          <div className="text-white text-center mt-3">Loading...</div>
+        }
+      >
+        <Routes>
+          <Route path="/productsPage" element={<ProductListView />}></Route>
+          <Route path="/home" element={<Home />}></Route>
+          <Route exact path="" element={<SignInView />}></Route>
+          <Route path="/AddItems" element={<AddItems />}></Route>
+          <Route path="/checkout" element={<CheckoutView />}></Route>
+          <Route path="/contactUs" element={<ContactUsView />}></Route>
+          <Route path="/signIn" element={<SignInView />}></Route>
+          <Route path="/signUp" element={<SignUpView />}></Route>
+        </Routes>
       </Suspense>
 
-      <Footer/>
+      <Footer />
     </BrowserRouter>
 
   );
