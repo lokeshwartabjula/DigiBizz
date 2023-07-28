@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Search from "./Search";
-import { ReactComponent as IconCart3 } from "bootstrap-icons/icons/cart3.svg";
-import { ReactComponent as IconPersonBadgeFill } from "bootstrap-icons/icons/person-badge-fill.svg";
-import { ReactComponent as IconStarFill } from "bootstrap-icons/icons/star-fill.svg";
-import { ReactComponent as IconListCheck } from "bootstrap-icons/icons/list-check.svg";
-import { ReactComponent as IconDoorClosedFill } from "bootstrap-icons/icons/door-closed-fill.svg";
-import { ReactComponent as IconHeartFill } from "bootstrap-icons/icons/heart-fill.svg";
-import { ReactComponent as IconBellFill } from "bootstrap-icons/icons/bell-fill.svg";
-import { ReactComponent as IconInfoCircleFill } from "bootstrap-icons/icons/info-circle-fill.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import "./Header.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Search from './Search';
+import { ReactComponent as IconCart3 } from 'bootstrap-icons/icons/cart3.svg';
+import { ReactComponent as IconPersonBadgeFill } from 'bootstrap-icons/icons/person-badge-fill.svg';
+import { ReactComponent as IconStarFill } from 'bootstrap-icons/icons/star-fill.svg';
+import { ReactComponent as IconListCheck } from 'bootstrap-icons/icons/list-check.svg';
+import { ReactComponent as IconDoorClosedFill } from 'bootstrap-icons/icons/door-closed-fill.svg';
+import { ReactComponent as IconHeartFill } from 'bootstrap-icons/icons/heart-fill.svg';
+import { ReactComponent as IconBellFill } from 'bootstrap-icons/icons/bell-fill.svg';
+import { ReactComponent as IconInfoCircleFill } from 'bootstrap-icons/icons/info-circle-fill.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -53,7 +53,10 @@ const Header = () => {
                 </button>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item menuItemcss" to="/account/profile">
+                    <Link
+                      className="dropdown-item menuItemcss"
+                      to="/account/profile"
+                    >
                       <IconPersonBadgeFill /> My Profile
                     </Link>
                   </li>
@@ -63,12 +66,18 @@ const Header = () => {
                     </Link>
                   </li> */}
                   <li>
-                    <Link className="dropdown-item menuItemcss" to="/account/orders">
+                    <Link
+                      className="dropdown-item menuItemcss"
+                      to="/account/orders"
+                    >
                       <IconListCheck className="text-primary" /> Orders
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item menuItemcss" to="/account/wishlist">
+                    <Link
+                      className="dropdown-item menuItemcss"
+                      to="/account/wishlist"
+                    >
                       <IconHeartFill className="text-danger" /> Wishlist
                     </Link>
                   </li>
@@ -95,8 +104,8 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-             
-              <Link to="/account/signin">Sign In</Link> |{" "}
+              <Link to="/addItems"> Add Items</Link> |{' '}
+              <Link to="/account/signin">Sign In</Link> |{' '}
               <Link to="/account/signup"> Sign Up</Link>
             </div>
           </div>
