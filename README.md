@@ -6,7 +6,7 @@
 - [Team Members](#team-members)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
-- [Project Workflow](#project-workflow)
+- [Project Workflow](#high-level-workflow-of-the-project)
 - [Links](#links)
 - [Code References](#code-references)
 
@@ -117,7 +117,7 @@ By addressing these challenges, the proposed technological innovation empowers s
 ## Links
 
 - [GitHub Repository] https://git.cs.dal.ca/kathiria/csci5193-s23-ti-team4
-- [Deployment Link](link-to-deployment)
+- [Deployment Link] https://digifybizz.netlify.app/
 
 ## Code References
 
