@@ -29,7 +29,7 @@ The design challenge aims to address the digital divide faced by small-scale bus
 ## Tech Stack
 
 Frontend - React.js  
-Backend - Express.js  
+Backend - Spring Boot 
 Database - MySQL
 
 ## Prerequisites
