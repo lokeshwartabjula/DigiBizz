@@ -1,6 +1,6 @@
 import React from "react";
-import { Field, reduxForm } from "redux-form";
-import { compose } from "redux";
+// import { Field, reduxForm } from "redux-form";
+// import { compose } from "redux";
 import { ReactComponent as IconPerson } from "bootstrap-icons/icons/person.svg";
 import { ReactComponent as IconBuilding } from "bootstrap-icons/icons/building.svg";
 import { ReactComponent as IconPhone } from "bootstrap-icons/icons/phone.svg";
@@ -16,7 +16,7 @@ const ContactUsForm = (props) => {
     >
       <div className="row">
         <div className="col-md-6">
-          <Field
+          {/* <Field
             name="name"
             type="text"
             label="Name"
@@ -28,10 +28,10 @@ const ContactUsForm = (props) => {
             pattern="[a-zA-Z\s]*"
             maxLength="50"
             className="mb-3"
-          />
+          /> */}
         </div>
         <div className="col-md-6">
-          <Field
+          {/* <Field
             name="company"
             type="text"
             label="Company"
@@ -42,13 +42,13 @@ const ContactUsForm = (props) => {
             // validate={[required, maxLength50]}
             maxLength="50"
             className="mb-3"
-          />
+          /> */}
         </div>
       </div>
 
       <div className="row">
         <div className="col-md-6">
-          <Field
+          {/* <Field
             name="mobileNo"
             type="number"
             label="Mobile no"
@@ -60,10 +60,10 @@ const ContactUsForm = (props) => {
             max="999999999999999"
             min="9999"
             className="mb-3"
-          />
+          /> */}
         </div>
         <div className="col-md-6">
-          <Field
+          {/* <Field
             name="email"
             type="email"
             label="Email address"
@@ -74,27 +74,27 @@ const ContactUsForm = (props) => {
             maxLength="50"
             required={true}
             className="mb-3"
-          />
+          /> */}
         </div>
       </div>
       <div className="row g-3">
         <div className="col-md-12">
-          <Field
+          {/* <Field
             name="message"
             label="Message"
             maxLength="1000"
             // component={renderFormTextArea}
             // validate={maxLength1000}
             placeholder="What you are looking for?"
-          />
+          /> */}
         </div>
         <div className="col-md-12">
-          <Field
+          {/* <Field
             id="informed"
             label="Keep me informed via email or phone about its Products and Services."
             name="informed"
             // component={renderFormCheckbox}
-          />
+          /> */}
         </div>
       </div>
       <div className="d-grid">
